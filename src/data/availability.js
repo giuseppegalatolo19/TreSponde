@@ -82,8 +82,7 @@ export function getAvailabilityStatus(date, service, now = new Date()) {
   if (slotDate < cutoff) {
     return {
       available: false,
-      message:
-        "Per questa fascia non sono disponibili le 24 ore di preavviso richieste. Scegli un altro momento.",
+      message: "Le richieste devono essere inviate con almeno 24 ore di preavviso.",
     };
   }
 
@@ -104,4 +103,3 @@ export function getAvailabilityStatus(date, service, now = new Date()) {
     message: "La fascia selezionata è disponibile per la richiesta.",
   };
 }
-

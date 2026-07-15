@@ -35,7 +35,8 @@ export default function MenuSection() {
                 {course.noteTitle && <p className="menu-course__note-title">{course.noteTitle}</p>}
                 {course.notes?.map((note) => (
                   <p className="menu-course__oil" key={note.name}>
-                    <strong>{note.name}</strong> — {note.text}
+                    <strong>{note.name}</strong>
+                    <span>{note.text}</span>
                   </p>
                 ))}
               </div>
