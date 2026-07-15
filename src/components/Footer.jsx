@@ -2,18 +2,15 @@ export default function Footer() {
   return (
     <footer className="site-footer">
       <div className="footer__inner">
-        <a className="footer__brand" href="#top">
-          Tre Sponde
-        </a>
+        <p className="footer__copyright">© 2026 TreSponde · Giuseppe Galatolo</p>
         <p>Palermo · Pop-up privato · Chef a domicilio</p>
         <nav aria-label="Contatti nel footer">
-          <a href="https://instagram.com/" target="_blank" rel="noreferrer">
-            Instagram
+          <a href="mailto:trespondeinfo@gmail.com">trespondeinfo@gmail.com</a>
+          <a href="https://wa.me/393317865305" target="_blank" rel="noreferrer">
+            WhatsApp 3317865305
           </a>
-          <a href="mailto:info@tresponde.it">Email</a>
         </nav>
       </div>
     </footer>
   );
 }
-

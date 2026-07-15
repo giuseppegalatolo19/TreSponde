@@ -9,7 +9,6 @@ export default function MenuSection() {
             <p className="eyebrow eyebrow--light">Il percorso</p>
             <h2 id="menu-title">Menù degustazione</h2>
           </div>
-          <p className="menu-intro__note">Quattro portate · Un racconto a tre sponde</p>
         </header>
 
         <ol className="menu-list">
@@ -47,4 +46,3 @@ export default function MenuSection() {
     </section>
   );
 }
-

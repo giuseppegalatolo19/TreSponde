@@ -1,3 +1,5 @@
+import BrandMark from "./BrandMark";
+
 function BotanicalMark() {
   return (
     <svg
@@ -30,9 +32,10 @@ export default function Hero() {
       </div>
 
       <header className="site-header" aria-label="Navigazione principale">
-        <a className="site-brand" href="#top" aria-label="Tre Sponde, torna all'inizio">
-          Tre Sponde
-        </a>
+        <div className="site-brand" aria-label="Tre Sponde">
+          <BrandMark />
+          <span className="site-brand__name">Tre Sponde</span>
+        </div>
         <nav className="site-nav" aria-label="Sezioni della pagina">
           <a href="#concept">Concept</a>
           <a href="#menu">Menu</a>
@@ -42,7 +45,6 @@ export default function Hero() {
 
       <section className="hero" aria-labelledby="hero-title">
         <div className="hero__content reveal">
-          <p className="eyebrow">Palermo · Cene private</p>
           <p className="hero__kicker">Pop Up Experience</p>
           <h1 id="hero-title">
             <span>Tre</span>
@@ -62,7 +64,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="hero__visual" aria-hidden="true">
+        <div className="hero__visual" aria-hidden="true" draggable="false">
           <span className="hero__sun" />
           <span className="hero__number">三</span>
           <span className="hero__places">Giappone · Corea · Sicilia</span>
